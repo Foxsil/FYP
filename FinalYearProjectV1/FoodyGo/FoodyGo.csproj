@@ -109,6 +109,7 @@
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCompassController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\InventorySceneController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterController.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterHP.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesSceneController.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesSceneUIController.cs" />
@@ -142,11 +143,18 @@
     <Compile Include="Assets\FoodyGo\Scripts\UI\HomeButton.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\InventoryContent.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\InventoryItem.cs" />
+    <Compile Include="Assets\FoodyGo\Scripts\UI\ItemDisplay.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\MonsterInventoryItem.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\UI\MonsterOfferPresenter.cs" />
-    <Compile Include="Assets\FoodyGo\Scripts\UI\ToggleAR.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Utils\Epoch.cs" />
     <Compile Include="Assets\FoodyGo\Scripts\Utils\TinyJson.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\FXQ_2D_Demo.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\FXQ_3D_Demo.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\Utilities\Particle_Controller\FXQ_MoveParticle.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\Utilities\Particle_Controller\FXQ_RotateShapeParticle.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\Utilities\Sound_Controller\FXQ_SoundController.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\Utilities\Sprite_Controller\FXQ_Adamantine.cs" />
+    <Compile Include="Assets\FX Quest\Demo\Scripts\Utilities\Sprite_Controller\FXQ_TargetAnimatorEvent.cs" />
     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
@@ -163,12 +171,15 @@
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
+    <Compile Include="Assets\ScreenSizeController.cs" />
     <Compile Include="Assets\SkySphere_V1\Examples\Gui.cs" />
     <Compile Include="Assets\SkySphere_V1\Examples\MouseLook.cs" />
     <Compile Include="Assets\Suriyun\Script\AnimatorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Elemental Free\Readme.txt" />
+    <None Include="Assets\FX Quest\!Quick start walkthrough.txt" />
+    <None Include="Assets\FX Quest\Readme.txt" />
     <None Include="Assets\GE Common Assets\Readme.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
     <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />

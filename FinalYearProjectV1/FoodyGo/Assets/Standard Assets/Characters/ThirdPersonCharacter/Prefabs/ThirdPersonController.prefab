@@ -48,7 +48,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!95 &9579096
 Animator:
@@ -1097,6 +1097,7 @@ GameObject:
   - component: {fileID: 92025237814998874}
   - component: {fileID: 124174389949987938}
   - component: {fileID: 81859529267799748}
+  - component: {fileID: 114787025783571632}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4575,7 +4576,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440194494359932}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &92025237814998874
 Behaviour:
   m_ObjectHideFlags: 1
@@ -4632,7 +4633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730e2ebedbcb1454bab936020db50d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gpsLocationService: {fileID: 0}
 --- !u!114 &114599362079424008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4650,6 +4650,23 @@ MonoBehaviour:
   visualiseInEditor: 1
   closestDistance: 0.5
   dontClipTag: Player
+--- !u!114 &114787025783571632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440194494359932}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87f62fbe33026b458da4d7369411e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookAt: {fileID: 4565518924173500}
+  camTransform: {fileID: 4554063426903674}
+  perspectiveZoomSpeed: 0.5
+  yZoomSpeed: 1
+  toggle: {fileID: 0}
+  AROn: 0
 --- !u!124 &124174389949987938
 Behaviour:
   m_ObjectHideFlags: 1

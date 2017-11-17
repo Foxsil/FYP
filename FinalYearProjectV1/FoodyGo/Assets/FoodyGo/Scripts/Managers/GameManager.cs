@@ -200,7 +200,7 @@ namespace packt.FoodyGO.Managers
                 //check if the scene has already been run
 
                 var mc = go.GetComponent<MonsterController>();
-                mc.currentMonster = mc.monsterService.getMonsterDetails(mc.monsterSpawnLocation);
+                mc.currentMonster = mc.monsterService.getMonsterDetails(mc.monsterSpawnLocation); //Need this
                 print(mc.currentMonster);
 
                 if (CatchScene == null )
@@ -212,7 +212,7 @@ namespace packt.FoodyGO.Managers
                 {
                     //the scene has run before, reactivate it
                     CatchScene.RootGameObject.SetActive(true);
-                    CatchScene.RootGameObject.GetComponent<CatchSceneController>().monsterProps = mc.currentMonster;
+                    CatchScene.RootGameObject.GetComponent<CatchSceneController>().currentMonster = mc.currentMonster;
                     var csc = CatchScene.RootGameObject.GetComponent<CatchSceneController>();
                     if (csc != null) csc.ResetScene();
                 }

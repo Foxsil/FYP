@@ -13,13 +13,13 @@ namespace packt.FoodyGO.UI
         private bool gyroSupported;
         private Quaternion rotFix;
 
-        //public GameObject ARToggle;
+        public GameObject ARToggle;
         private bool camAvail;
 
 
         void Start()
         {
-            //CheckARSupported();
+            CheckARSupported();
 
             Screen.orientation = ScreenOrientation.Portrait;
         }
@@ -29,58 +29,62 @@ namespace packt.FoodyGO.UI
         public AspectRatioFitter aspectFitter;
         void Awake()
         {
-            StartCam();
+            //StartCam();
 
-            //CheckARSupported();
+            CheckARSupported();
         }
 
         private void OnEnable()
         {
-            StartCam();
+            //StartCam();
                 
-               //CheckARSupported();
+               CheckARSupported();
             
         }
 
-        //void CheckARSupported()
-        //{
-        //    gyroSupported = SystemInfo.supportsGyroscope;
+        void CheckARSupported()
+        {
+            gyroSupported = SystemInfo.supportsGyroscope;
 
-        //    //if (webcamTexture == null)
-        //    //{
-        //    //    camAvail = false;
-        //    //}
-        //    //else {
-        //    //    camAvail = true;
-        //    //}
+            //if (webcamTexture == null)
+            //{
+            //    camAvail = false;
+            //}
+            //else {
+            //    camAvail = true;
+            //}
 
 
-        //    if (!gyroSupported )//|| !webcamTexture.isPlaying)
-        //    {
-        //        ARToggle.SetActive(false);
+            if (!gyroSupported)//|| !webcamTexture.isPlaying)
+            {
+                ARToggle.SetActive(false);
 
-        //        StartCam();
+                //StartCam();
 
-        //        print("Gyro or Cam not available.");
-        //    }
-        //    else
-        //    {
-        //        ARToggle.SetActive(true);
+                this.gameObject.GetComponent<RawImage>().enabled = true;
 
-        //        //Screen.orientation = ScreenOrientation.Portrait;
+                print("Gyro or Cam not available.");
+            }
+            else
+            {
+                ARToggle.SetActive(true);
 
-        //        StartCam();
+                //Screen.orientation = ScreenOrientation.Portrait;
 
-        //        print("Gyro or Cam available.");
-        //    }
-        //}
+                this.gameObject.GetComponent<RawImage>().enabled = false;
+
+                StartCam();
+
+                print("Gyro or Cam available.");
+            }
+        }
 
         void Update()
         {
 
             //if (camAvail)
             //{
-            if (webcamTexture.isPlaying == false )//|| webcamTexture == null)
+            if (webcamTexture == null || webcamTexture.isPlaying == false)
             {
                 return;
             }

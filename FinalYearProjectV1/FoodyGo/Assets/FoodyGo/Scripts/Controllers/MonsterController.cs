@@ -28,10 +28,10 @@ namespace packt.FoodyGO.Controllers
 
         }
 
-        private void OnEnable()
-        {
-            //anim = GetComponent<Animation>();
-        }
+        //private void OnEnable()
+        //{
+        //    //anim = GetComponent<Animation>();
+        //}
 
         // Update is called once per frame
         void Update()

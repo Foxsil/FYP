@@ -61,6 +61,7 @@
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\CharacterGPSCompassController.cs" />
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\InventorySceneController.cs" />
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterController.cs" />
+     <Compile Include="Assets\FoodyGo\Scripts\Controllers\MonsterHP.cs" />
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesController.cs" />
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesSceneController.cs" />
      <Compile Include="Assets\FoodyGo\Scripts\Controllers\PlacesSceneUIController.cs" />
